@@ -1,5 +1,5 @@
 /**
- * Created by kaspe on 04-09-2016.
+ * Created by kasper pagh on 04-09-2016.
  */
 
 
@@ -7,7 +7,7 @@
 
 /*
     Vi bruger "use stickt" for at gøre javascript mere sikkert at arbejde med, så man ikke eksempelvis kan lave en type-0 i et variabel navn.
-    Strict gør nemlig at udeklerede variabler giver fejl, hvis man prøver bruge dem. Det vil altså sige at følgende kode ikke virker:
+    Strict gør nemlig at undeclared variabler giver fejl, hvis man prøver bruge at dem. Det vil altså sige at følgende kode ikke virker:
 
  "use strict";
  myFunction();
@@ -22,7 +22,8 @@
 
 function myFunction()
 {
-    y = 3.14;   // This will cause an error (y is not defined)
+    var y = 3.14;   // This will cause an error (y is not defined)
+    console.log("Jeg virker! y = " + y)
 }
 
 myFunction();
