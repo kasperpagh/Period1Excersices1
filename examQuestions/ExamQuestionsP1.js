@@ -14,7 +14,7 @@
 
  function myFunction()
  {
- y = 3.14;   // This will cause an error (y is not defined)
+ y = 3.14;   // giver fejl, y er ikke defineret!
  }
 
  følgende kode virker:
@@ -22,7 +22,7 @@
 
 function myFunction()
 {
-    var y = 3.14;   // This will cause an error (y is not defined)
+    var y = 3.14;
     console.log("Jeg virker! y = " + y)
 }
 
